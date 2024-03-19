@@ -8,6 +8,12 @@
     <meta content="Free HTML Templates" name="keywords">
     <meta content="Free HTML Templates" name="description">
 
+    <!--Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    
+
     <!-- Favicon -->
     <link href="../img/favicon.ico" rel="icon">
 
@@ -61,9 +67,9 @@
 
 
      <!-- Navbar Start -->
-     <div class="container-fluid p-0">
+    <div class="container-fluid p-0">
         <nav class="navbar navbar-expand-lg bg-white navbar-light py-3 py-lg-0 px-lg-5">
-            <a href="../index.html" class="navbar-brand ml-lg-3">
+            <a href="index.html" class="navbar-brand ml-lg-3">
                 <h1 class="m-0 text-uppercase text-primary"><i class="fa fa-book-reader mr-3"></i>Edukate</h1>
             </a>
             <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
@@ -74,12 +80,12 @@
                     <a href="../index.html" class="nav-item nav-link active">Trang Chủ</a>
                     <a href="../about.html" class="nav-item nav-link">Giới Thiệu</a>
                     <div class="nav-item dropdown">
-                        <a href="courses.html" class="nav-link dropdown-toggle" data-toggle="dropdown">Môn Học</a>
+                        <a href="" class="nav-link dropdown-toggle" data-toggle="dropdown">Môn Học</a>
                         <div class="dropdown-menu m-0">
-                            <a href="./courses/engiDescript.html" class="dropdown-item">Kỹ Thuật</a>
-                            <a href="./courses/codeDescript.html" class="dropdown-item">Lập Trình</a>
-                            <a href="./courses/bioDescript.html" class="dropdown-item">Sinh Học Ứng Dụng</a>
-                            <a href="./courses/phyDescript.html" class="dropdown-item">Vật Lý Ứng Dụng</a>
+                            <a href="./engiDescript.html" class="dropdown-item">Kỹ Thuật</a>
+                            <a href="./codeDescript.html" class="dropdown-item">Lập Trình</a>
+                            <a href="./bioDescript.html" class="dropdown-item">Sinh Học Ứng Dụng</a>
+                            <a href="./phyDescript.html" class="dropdown-item">Vật Lý Ứng Dụng</a>
                         </div>
                     </div>
                     <div class="nav-item dropdown">
@@ -91,9 +97,10 @@
                             <a href="../projectDropDown/physicsProject.html" class="dropdown-item">Vật Lý Ứng Dụng</a>
                         </div>
                     </div>
+                    <a href="../thuthachthang.html" class="nav-item nav-link">Thử Thách Tháng</a>
                     <a href="../contact.html" class="nav-item nav-link">Liên Hệ</a>
                 </div>
-                <a href="" class="btn btn-primary py-2 px-4 d-none d-lg-block">Join Us</a>
+                <a href="../quyengop.html" class="btn btn-primary py-2 px-4 d-none d-lg-block">Quyên Góp</a>
             </div>
         </nav>
     </div>
@@ -101,30 +108,13 @@
 
 
     <!-- Header Start -->
-    <div class="jumbotron jumbotron-fluid page-header position-relative overlay-bottom" style="margin-bottom: 90px;">
+    <div class="jumbotron jumbotron-fluid page-header position-relative overlay-bottom" style="margin-bottom: 90px; height: 450px">
         <div class="container text-center py-5">
             <h1 class="text-white display-1">Nội Dung Môn Học</h1>
             <div class="d-inline-flex text-white mb-5">
-                <p class="m-0 text-uppercase"><a class="text-white" href="">Home</a></p>
+                <p class="m-0 text-uppercase"><a class="text-white" href="">trang chủ</a></p>
                 <i class="fa fa-angle-double-right pt-1 px-3"></i>
-                <p class="m-0 text-uppercase">Course Detail</p>
-            </div>
-            <div class="mx-auto mb-5" style="width: 100%; max-width: 600px;">
-                <div class="input-group">
-                    <div class="input-group-prepend">
-                        <button class="btn btn-outline-light bg-white text-body px-4 dropdown-toggle" type="button" data-toggle="dropdown"
-                            aria-haspopup="true" aria-expanded="false">Courses</button>
-                        <div class="dropdown-menu">
-                            <a class="dropdown-item" href="#">Courses 1</a>
-                            <a class="dropdown-item" href="#">Courses 2</a>
-                            <a class="dropdown-item" href="#">Courses 3</a>
-                        </div>
-                    </div>
-                    <input type="text" class="form-control border-light" style="padding: 30px 25px;" placeholder="Keyword">
-                    <div class="input-group-append">
-                        <button class="btn btn-secondary px-4 px-lg-5">Search</button>
-                    </div>
-                </div>
+                <p class="m-0 text-uppercase">Nội dung môn học</p>
             </div>
         </div>
     </div>
@@ -138,7 +128,7 @@
                 <div class="col-lg-8">
                     <div class="mb-5">
                         <div class="section-title position-relative mb-5">
-                            <h6 class="d-inline-block position-relative text-secondary text-uppercase pb-2">Course Detail</h6>
+                            <h6 class="d-inline-block position-relative text-secondary text-uppercase pb-2">Nội dung môn học</h6>
                             <h1 class="display-4">Lập Trình</h1>
                         </div>
                         <img class="img-fluid rounded w-100 mb-4" src="../img/header.jpg" alt="Image">
@@ -151,13 +141,12 @@
                             sea no sed dolores diam nonumy, gubergren sit stet no diam kasd vero.</p>
                     </div>
 
-                    <h2 class="mb-3">Related Courses</h2>
+                    <h2 class="mb-3">Môn Học Liên Quan</h2>
                     <div class="owl-carousel related-carousel position-relative" style="padding: 0 30px;">
-                        <a class="courses-list-item position-relative d-block overflow-hidden mb-2" href="../detail.html">
+                        <a class="courses-list-item position-relative d-block overflow-hidden mb-2" href="./bioDescript.html">
                             <img class="img-fluid" src="../img/courses-1.jpg" alt="">
                             <div class="courses-text">
-                                <h4 class="text-center text-white px-3">Web design & development courses for
-                                    beginners</h4>
+                                <h4 class="text-center text-white px-3">Sinh Học Thực Hành</h4>
                                 <div class="border-top w-100 mt-3">
                                     <div class="d-flex justify-content-between p-4">
                                         <span class="text-white"><i class="fa fa-user mr-2"></i>Jhon Doe</span>

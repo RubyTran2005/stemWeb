@@ -5,6 +5,7 @@
  * Copyright 2011-2020 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
+ 
  :root {
   --blue: #007bff;
   --indigo: #6610f2;
@@ -43,10 +44,10 @@
 }
 
 html {
-  font-family: sans-serif;
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  box-sizing: border-box;
 }
 
 article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
@@ -54,8 +55,8 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
 }
 
 body {
+  font-family: 'Be Vietnam Pro', sans-serif;
   margin: 0;
-  font-family: Helvetica, sans-serif;;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
@@ -91,7 +92,8 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #fff;
   padding: 20px;
   margin-bottom: 30px;
-  font-family: "Open Sans", sans-serif; /* Old font */
+  font-family: 'Be Vietnam Pro', sans-serif;
+  /* Old font */
 }
 
 .materials-title {
@@ -119,7 +121,7 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #fff;
   padding: 20px;
   margin-bottom: 30px;
-  font-family: "Open Sans", sans-serif; /* Old font */
+  font-family: 'Be Vietnam Pro', sans-serif;  /* Old font */
 }
 
 .safety-cautions-title {
@@ -137,7 +139,22 @@ h1, h2, h3, h4, h5, h6 {
   border: none; /* Remove border */
 }
 
+/*draft*/
 
+.containerScroll {
+  width: 100%;
+  overflow-x: auto; /* Enable horizontal scrolling */
+  white-space: nowrap; /* Prevent wrapping */
+}
+
+.itemScroll {
+  display: inline-block;
+}
+
+.itemScroll img {
+  width: 100%;
+  height: auto;
+}
 
 
 
@@ -240,7 +257,7 @@ pre,
 code,
 kbd,
 samp {
-  font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-family: 'Be Vietnam Pro', sans-serif;
   font-size: 1em;
 }
 
@@ -426,7 +443,7 @@ template {
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
   margin-bottom: 0.5rem;
-  font-family: "Jost", sans-serif;
+  font-family: 'Be Vietnam Pro', sans-serif;
   font-weight: 500;
   line-height: 1.2;
   color: #120F2D;
@@ -5042,6 +5059,15 @@ a.badge-dark:focus, a.badge-dark.focus {
 }
 
 .jumbotron {
+  position: relative;
+  padding: 2rem 1rem;
+  margin-bottom: 2rem;
+  background-color: #e9ecef;
+  border-radius: 0.3rem;
+}
+
+.jumbotron1 {
+  position: relative;
   padding: 2rem 1rem;
   margin-bottom: 2rem;
   background-color: #e9ecef;
@@ -5050,6 +5076,12 @@ a.badge-dark:focus, a.badge-dark.focus {
 
 @media (min-width: 576px) {
   .jumbotron {
+    padding: 4rem 2rem;
+  }
+}
+
+@media (min-width: 576px) {
+  .jumbotron1 {
     padding: 4rem 2rem;
   }
 }
@@ -5890,7 +5922,7 @@ a.close.disabled {
   z-index: 1070;
   display: block;
   margin: 0;
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Be Vietnam Pro', sans-serif;
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
@@ -6003,7 +6035,7 @@ a.close.disabled {
   z-index: 1060;
   display: block;
   max-width: 276px;
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Be Vietnam Pro', sans-serif;
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
@@ -7913,7 +7945,7 @@ button.bg-dark:focus {
 
 .pt-5,
 .py-5 {
-  padding-top: 3rem !important;
+  padding-top: 1rem !important;
 }
 
 .pr-5,
@@ -9468,7 +9500,8 @@ button.bg-dark:focus {
 }
 
 .text-monospace {
-  font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !important;
+  font-family: 'Be Vietnam Pro', sans-serif;
+
 }
 
 .text-justify {
@@ -9797,7 +9830,8 @@ h6,
 }
 
 .btn {
-  font-family: 'Jost', sans-serif;
+  font-family: 'Be Vietnam Pro', sans-serif;
+
 }
 
 .btn-square {
@@ -9841,7 +9875,7 @@ h6,
 }
 
 .navbar-light .navbar-nav .nav-link {
-  font-family: 'Jost', sans-serif;
+  font-family: 'Be Vietnam Pro', sans-serif;
   padding: 30px 15px;
   font-size: 18px;
   font-weight: 500;
@@ -9861,7 +9895,12 @@ h6,
 }
 
 .jumbotron {
-  background: linear-gradient(rgba(40, 120, 235, 0.9), rgba(40, 120, 235, 0.9)), url(../img/header.jpg), no-repeat center center;
+  background: url(../img/header.jpg), no-repeat center center;
+  background-size: cover;
+}
+
+.jumbotron1 {
+  background: url(../img/page-header.jpg), no-repeat center center;
   background-size: cover;
 }
 
@@ -9869,6 +9908,63 @@ h6,
   background: linear-gradient(rgba(40, 120, 235, 0.9), rgba(40, 120, 235, 0.9)), url(../img/page-header.jpg), no-repeat center center;
   background-size: cover;
 }
+
+
+
+/*Slideshow transition*/
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+/* Hide the images by default */
+.mySlides1 {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prevButton, .nextButton {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.nextButton {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prevButton:hover, .nextButton:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+/* Fading animation */
+.fade1 {
+  animation-name: fade;
+  animation-duration: 1s;
+}
+
+@keyframes slide {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+
+
 
 .overlay-top::before,
 .overlay-bottom::after {
@@ -10022,3 +10118,112 @@ h6,
 .testimonial-carousel .owl-nav .owl-prev:hover {
   background: #2878EB;
 }
+
+.be-vietnam pro-thin {
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.be-vietnam pro-extralight {
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.be-vietnam pro-light {
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.be-vietnam pro-regular {
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.be-vietnam pro-medium {
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.be-vietnam pro-semibold {
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.be-vietnam pro-bold {
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.be-vietnam pro-extrabold {
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.be-vietnam pro-black {
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.be-vietnam pro-thin-italic {
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.be-vietnam pro-extralight-italic {
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.be-vietnam pro-light-italic {
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.be-vietnam pro-regular-italic {
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.be-vietnam pro-medium-italic {
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.be-vietnam pro-semibold-italic {
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.be-vietnam pro-bold-italic {
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.be-vietnam pro-extrabold-italic {
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-weight: 800;
+  font-style: italic;
+}
+
+.be-vietnam pro-black-italic {
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+
