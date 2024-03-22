@@ -5074,6 +5074,14 @@ a.badge-dark:focus, a.badge-dark.focus {
   border-radius: 0.3rem;
 }
 
+.jumbotron2 {
+  position: relative;
+  padding: 2rem 1rem;
+  margin-bottom: 2rem;
+  background-color: #e9ecef;
+  border-radius: 0.3rem;
+}
+
 @media (min-width: 576px) {
   .jumbotron {
     padding: 4rem 2rem;
@@ -5086,6 +5094,11 @@ a.badge-dark:focus, a.badge-dark.focus {
   }
 }
 
+@media (min-width: 576px) {
+  .jumbotron2 {
+    padding: 4rem 2rem;
+  }
+}
 .jumbotron-fluid {
   padding-right: 0;
   padding-left: 0;
@@ -9895,14 +9908,21 @@ h6,
 }
 
 .jumbotron {
-  background: url(../img/header.jpg), no-repeat center center;
+  background: url(../img/coverHome1.png), no-repeat center center;
   background-size: cover;
 }
 
 .jumbotron1 {
-  background: url(../img/page-header.jpg), no-repeat center center;
+  background: url(../img/coverHome2.png), no-repeat center center;
   background-size: cover;
 }
+
+.jumbotron2 {
+  background: url(../img/coverHome3.png), no-repeat center center;
+  background-size: cover;
+}
+
+
 
 .jumbotron.page-header {
   background: linear-gradient(rgba(40, 120, 235, 0.9), rgba(40, 120, 235, 0.9)), url(../img/page-header.jpg), no-repeat center center;
@@ -9951,7 +9971,7 @@ h6,
 /* Fading animation */
 .fade1 {
   animation-name: fade;
-  animation-duration: 1s;
+  animation-duration: 6s;
 }
 
 @keyframes slide {

@@ -148,14 +148,22 @@ function currentSlide(n) {
 }
 
 function showSlides(n) {
-    let i;
-    let slides = document.getElementsByClassName("mySlides1");
-    if (n > slides.length) {slideIndex = 1}
-    if (n < 1) {slideIndex = slides.length}
-    for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
-      slides[i].classList.remove("fade1"); // Remove fade animation class
-    }
-    slides[slideIndex-1].style.display = "block";
-    slides[slideIndex-1].classList.add("fade1"); // Add slide animation class
+  let i;
+  let slides = document.getElementsByClassName("mySlides1");
+  let dots = document.getElementsByClassName("dot1");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
   }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+
+// Auto slide every 10 seconds
+setInterval(function() {
+  plusSlides(1);
+}, 10000); // 10000 milliseconds = 10 seconds
