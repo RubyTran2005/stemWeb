@@ -9906,6 +9906,14 @@ h6,
     padding: 10px 15px;
   }
 }
+.jumbotron img,
+.jumbotron1 img,
+.jumbotron2 img {
+    max-width: 100%;
+    height: auto;
+}
+
+
 
 .jumbotron {
   background: url(../img/coverHome1.png), no-repeat center center;
@@ -10251,4 +10259,3 @@ h6,
   font-weight: 900;
   font-style: italic;
 }
-
