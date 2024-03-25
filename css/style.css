@@ -5,7 +5,8 @@
  * Copyright 2011-2020 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
- 
+ @import "bourbon";
+
  :root {
   --blue: #007bff;
   --indigo: #6610f2;
@@ -139,22 +140,87 @@ h1, h2, h3, h4, h5, h6 {
   border: none; /* Remove border */
 }
 
-/*draft*/
 
-.containerScroll {
-  width: 100%;
-  overflow-x: auto; /* Enable horizontal scrolling */
-  white-space: nowrap; /* Prevent wrapping */
+
+
+/*Thuwr*/
+.slideshow-container2 {
+  max-width: 2000px;
+  position: relative;
+  margin: auto;
+  box-sizing: border-box;
 }
 
-.itemScroll {
+/* Hide the images by default */
+.mySlides2 {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev2, .next2 {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next2 {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev2:hover, .next2:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext2 {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot2 {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
   display: inline-block;
+  transition: background-color 0.6s ease;
 }
 
-.itemScroll img {
-  width: 100%;
-  height: auto;
+.active2, .dot2:hover {
+  background-color: #717171;
 }
+
+/* Fading animation */
+.fade2 {
+  animation-name: fade2;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade2 {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+
+
 
 
 
@@ -9913,23 +9979,6 @@ h6,
     height: auto;
 }
 
-
-
-.jumbotron {
-  background: url(../img/coverHome1.png), no-repeat center center;
-  background-size: cover;
-}
-
-.jumbotron1 {
-  background: url(../img/coverHome2.png), no-repeat center center;
-  background-size: cover;
-}
-
-.jumbotron2 {
-  background: url(../img/coverHome3.png), no-repeat center center;
-  background-size: cover;
-}
-
 .jumbotron.caiTim{
   background: url(../projects/img/caiTimVaPHCover.png), no-repeat center center;
   background-size: cover;
@@ -9941,61 +9990,6 @@ h6,
   background: linear-gradient(rgba(40, 120, 235, 0.9), rgba(40, 120, 235, 0.9)), url(../img/page-header.jpg), no-repeat center center;
   background-size: cover;
 }
-
-
-
-/*Slideshow transition*/
-.slideshow-container {
-  max-width: 1000px;
-  position: relative;
-  margin: auto;
-}
-/* Hide the images by default */
-.mySlides1 {
-  display: none;
-}
-
-/* Next & previous buttons */
-.prevButton, .nextButton {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-}
-
-/* Position the "next button" to the right */
-.nextButton {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prevButton:hover, .nextButton:hover {
-  background-color: rgba(0,0,0,0.8);
-}
-/* Fading animation */
-.fade1 {
-  animation-name: fade;
-  animation-duration: 6s;
-}
-
-@keyframes slide {
-  from {
-    transform: translateX(100%);
-  }
-  to {
-    transform: translateX(0);
-  }
-}
-
 
 
 
