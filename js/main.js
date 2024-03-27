@@ -197,3 +197,9 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active2";
 }
+
+// Automatic slide transition every 10 seconds
+setInterval(function() {
+  plusSlides(1);
+}, 10000); // 10000 milliseconds = 10 seconds
+
