@@ -9890,6 +9890,9 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 /********** Custom CSS ************/
+#courses2{
+  scroll-behavior: smooth;
+}
 h1,
 h2,
 .font-weight-bold {

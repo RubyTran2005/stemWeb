@@ -203,3 +203,4 @@ setInterval(function() {
   plusSlides(1);
 }, 10000); // 10000 milliseconds = 10 seconds
 
+
