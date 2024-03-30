@@ -174,20 +174,23 @@
                             <span>Chúng Tôi</span></h1>
                     </div>
                     <div class="contact-form">
-                        <form>
+                        <form action="https://api.web3forms.com/submit" method="POST">
                             <div class="row">
-                                <div class="col-6 form-group">
-                                    <input type="text" class="form-control border-top-0 border-right-0 border-left-0 p-0" placeholder="Họ Và Tên" required="required">
+                                <div class="form-group">
+                                    <input type="hidden" name="access_key" value="a8be2dd2-b4d8-4cac-b0b4-c22a9dab1139">
                                 </div>
                                 <div class="col-6 form-group">
-                                    <input type="email" class="form-control border-top-0 border-right-0 border-left-0 p-0" placeholder="Email Của Bạn" required="required">
+                                    <input type="text" name="Name"class="form-control border-top-0 border-right-0 border-left-0 p-0" placeholder="Họ Và Tên" required="required">
+                                </div>
+                                <div class="col-6 form-group">
+                                    <input type="email" name="Email"class="form-control border-top-0 border-right-0 border-left-0 p-0" placeholder="Email Của Bạn" required="required">
                                 </div>
                             </div>
                             <div class="form-group">
-                                <input type="text" class="form-control border-top-0 border-right-0 border-left-0 p-0" placeholder="Chủ Đề" required="required">
+                                <input type="text" name="Topic" class="form-control border-top-0 border-right-0 border-left-0 p-0" placeholder="Chủ Đề" required="required">
                             </div>
                             <div class="form-group">
-                                <textarea class="form-control border-top-0 border-right-0 border-left-0 p-0" rows="5" placeholder="Nội Dung" required="required"></textarea>
+                                <textarea class="form-control border-top-0 border-right-0 border-left-0 p-0" name="Detail"rows="5" placeholder="Nội Dung" required="required"></textarea>
                             </div>
                             <div>
                                 <button class="btn btn-primary py-3 px-5" type="submit">Gửi Tin Nhắn</button>
