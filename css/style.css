@@ -82,7 +82,17 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
-
+#learnMoreBtn {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+.team-item:hover #learnMoreBtn {
+  opacity: 1;
+}
+.team-item {
+  position: relative;
+  cursor: pointer;
+}
 /* Custom CSS for Materials and Safety Cautions */
 
 /* Styles for Materials Box */
