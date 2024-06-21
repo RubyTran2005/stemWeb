@@ -204,3 +204,6 @@ setInterval(function() {
 }, 10000); // 10000 milliseconds = 10 seconds
 
 
+document.querySelector('.team-item').addEventListener('click', function() {
+    document.getElementById('learnMoreBtn').style.opacity = 1;
+});
