@@ -207,3 +207,17 @@ setInterval(function() {
 document.querySelector('.team-item').addEventListener('click', function() {
     document.getElementById('learnMoreBtn').style.opacity = 1;
 });
+
+// For submenu dropdowns
+$(document).ready(function() {
+    $('.dropdown-submenu a.dropdown-toggle').on("click", function(e) {
+        e.preventDefault();
+        e.stopPropagation();
+        $(this).next('.dropdown-menu').toggleClass('show');
+    });
+
+    // Hide any open menus when focus is lost
+    $('body').on('click', function(e) {
+        $('.dropdown-submenu .dropdown-menu').removeClass('show');
+    });
+});
