@@ -83,18 +83,28 @@
             </button>
             <div class="collapse navbar-collapse justify-content-between px-lg-3" id="navbarCollapse">
                 <div class="navbar-nav mx-auto py-0">
-                    <a href="./" class="nav-item nav-link">Trang Chủ</a>
-                    <a href="./about.html" class="nav-item nav-link active">Giới Thiệu</a>
-                    <a href="./kienThucThuVi.html" class="nav-item nav-link">Kiến Thức Thú Vị</a>
-                    <div class="nav-item dropdown">
-                        <a href="./courses.html" class="nav-link dropdown-toggle" data-toggle="dropdown">Dự Án STEM</a>
-                        <div class="dropdown-menu m-0">
-                            <a href="./projectDropDown/engiProject.html" class="dropdown-item">Kỹ Thuật/Vật Lý</a>
-                            <a href="./projectDropDown/bioProject.html" class="dropdown-item">Hoá Sinh Ứng Dụng</a>                            <a href="./projectDropDown/bioProject.html" class="dropdown-item">Hoá Sinh Ứng Dụng</a>
-                            <a href="./projectDropDown/codingProject.html" class="dropdown-item">Lập Trình</a>
-                        </div>
-                    </div>
-                    <a href="./thuthachthang.html" class="nav-item nav-link">Thử Thách Tháng</a>
+                    <ul class="nested-dropdown">
+                        <li><a href="./" class="nav-item nav-link active">Trang Chủ</a></li>
+                       <li> <a href="./about.html" class="nav-item nav-link">Giới Thiệu</a></li>
+                        <li><a href="./kienThucThuVi.html" class="nav-item nav-link">Kiến Thức Thú Vị</a></li>
+                        <li class="nav-item dropdown">
+                            <a href="./courses.html" class="nav-link dropdown-toggle" data-toggle="dropdown">Dự Án STEM</a>
+                            <ul class="dropdown-menu m-0">
+                                <li><a href="./projectDropDown/engiProject.html" class="dropdown-item">Kỹ Thuật/Vật Lý</a></li>
+                                <li><a href="./projectDropDown/bioProject.html" class="dropdown-item">Hoá Sinh Ứng Dụng</a></li>
+                                <li><a href="./projectDropDown/codingProject.html" class="dropdown-item has-submenu">Lập Trình <i class="fas fa-caret-right"></i></a>
+                                    <div class="submenu-dropdown">
+                                        <ul>
+                                            <li><a href="#">Python</a></li>
+                                            <li><a href="#">Scratch</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+        
+                        <li><a href="./thuthachthang.html" class="nav-item nav-link">Thử Thách Tháng</a></li>
+                        </ul>
                 </div>
                 <a href="./contact.html" class="btn btn-primary py-2 px-4 d-none d-lg-block">Liên Hệ</a>
             </div>
