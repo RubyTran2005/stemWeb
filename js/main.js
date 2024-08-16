@@ -222,6 +222,25 @@ $(document).ready(function() {
     });
 });
 
+// Mobile click event
+$(document).ready(function() {
+  $('.dropdown-submenu a.dropdown-toggle').on("click", function(e) {
+      e.preventDefault();
+      e.stopPropagation();
+      $(this).next('.dropdown-menu').toggleClass('show');
+  });
+
+  // Prevent the submenu from closing when clicking on dropdown-items
+  $('.dropdown-submenu .dropdown-item').on("click", function(e) {
+      e.stopPropagation();
+  });
+
+  // Hide any open menus when focus is lost
+  $('body').on('click', function(e) {
+      $('.dropdown-submenu .dropdown-menu').removeClass('show');
+  });
+});
+
 // Season Clickbait --- Testing 0% ---- Ugly as hell
 function randNum(min, max) {
     min = Math.ceil(min);
@@ -336,6 +355,7 @@ function randNum(min, max) {
       flower.style.top = this.top + 'px';
       flower.style.width = this.size + 'vmin';
       flower.style.height = this.size + 'vmin';
+       flower.style.pointerEvents = 'none'
       for (var i = 0; i < 5; i++){
         var petal = this.petal;
         // var styles = this.petal_styles[i];
