@@ -355,7 +355,8 @@ function randNum(min, max) {
       flower.style.top = this.top + 'px';
       flower.style.width = this.size + 'vmin';
       flower.style.height = this.size + 'vmin';
-       flower.style.pointerEvents = 'none'
+      flower.style.pointerEvents = 'none'
+      flower.style.zIndex = 1
       for (var i = 0; i < 5; i++){
         var petal = this.petal;
         // var styles = this.petal_styles[i];
@@ -386,3 +387,4 @@ function randNum(min, max) {
       });
     }
   });
+

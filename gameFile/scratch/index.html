@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="short-cut icon" type="x-icon" href="./img/android-chrome-192x192.png">
+    <!--Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <meta charset="utf-8">
+    <title>Trang Chủ - Khám Phá Khoa Học</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Dự Án Khám Phá Khoa Học" name="keywords">
+    <meta content="Khám Phá Khoa Học là dự án do các bạn trẻ đầy nhiệt huyết tạo ra nhằm mục đích truyền
+    cảm hứng theo đuổi ngành STEM cho các học sinh cấp 1 và cấp 2." name="description">
+
+
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600;700&family=Open+Sans:wght@400;600&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bo  otstrap Stylesheet -->
+    <link href="../../css/style.css" rel="stylesheet">
+    <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-storage.js"></script>
+</head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-7408T4E63D"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-7408T4E63D');
+</script>
+
+<body>
+    
+    <!-- Topbar Start -->
+    <div class="container-fluid bg-dark">
+        <div class="row py-2 px-lg-5">
+            <div class="col-lg-6 text-center text-lg-left mb-2 mb-lg-0">
+                <div class="d-inline-flex align-items-center text-white">
+                    <small><i class="fa fa-phone-alt mr-2"></i>+84 867 990 857</small>
+                    <small class="px-3">|</small>
+                    <small><i class="fa fa-envelope mr-2"></i>khamphakhoahoc.stem@gmail.com</small>
+                </div>
+            </div>
+            <div class="col-lg-6 text-center text-lg-right">
+                <div class="d-inline-flex align-items-center">
+                    <a class="text-white px-2" href="https://www.facebook.com/profile.php?id=61559653868193">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <!--<a class="text-white px-2" href="">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a class="text-white px-2" href="">
+                        <i class="fab fa-instagram"></i>
+                    </a>-->
+                    <a class="text-white pl-2" href="https://www.youtube.com/channel/UCEzFyFCGT4zV8PX2EfXBN5A">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Topbar End -->
+
+
+   <!-- Navbar Start -->
+   <div class="container-fluid p-0">
+    <nav class="navbar navbar-expand-lg bg-white navbar-light py-3 py-lg-0 px-lg-5">
+        <a href="./" class="navbar-brand ml-lg-3">
+            <h5 class="m-0 text-uppercase text-primary"><img src="../../img/Logo.png" alt="" style="height:85px;"></h1>
+        </a>
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-between px-lg-3" id="navbarCollapse">
+            <div class="navbar-nav mx-auto py-0">                
+                <ul class="nested-dropdown">
+                    <li><a href="../../index.html" class="nav-item nav-link active">Trang Chủ</a></li>
+                   <li> <a href="../../about.html" class="nav-item nav-link">Giới Thiệu</a></li>
+                    <li><a href="../../kienThucThuVi.html" class="nav-item nav-link">Kiến Thức Thú Vị</a></li>
+                    <li class="nav-item dropdown">
+                        <a href="./courses.html" class="nav-link dropdown-toggle" data-toggle="dropdown">Dự Án STEM</a>
+                        <ul class="dropdown-menu m-0">
+                            <li><a href="../../minigame.html" class="dropdown-item">Orientation Game</a></li>
+                            <li><a href="../../projectDropDown/engiProject.html" class="dropdown-item">Kỹ Thuật/Vật Lý</a></li>
+                            <li><a href="../../projectDropDown/bioProject.html" class="dropdown-item">Hoá Sinh Ứng Dụng</a></li>
+                            <li><a class="dropdown-item">Lập Trình <i class="fas fa-caret-down"></i></a>
+                                
+                                    <ul class="submenu-dropdown">
+                                        <li><a href="../../projectDropDown/pythonProject.html">Python</a></li>
+                                        <li><a href="../../projectDropDown/scratchProject.html">Scratch</a></li>
+                                    </ul>
+                                
+                            </li>
+                            <li><a href="../../projectDropDown/aiProject.html" class="dropdown-item">AI</a></li>
+                        </ul>
+                    </li>
+    
+                    <li><a href="../../thuthachthang.html" class="nav-item nav-link">Thử Thách Tháng</a></li>
+                    </ul>
+            </div>
+            <a href="../../contact.html" class="btn btn-primary py-2 px-4 d-none d-lg-block">Liên Hệ</a>
+        </div>
+    </nav>
+    </div>
+    <!-- Navbar End -->
+
+     <!-- MODAL START -->
+     <div class="modal2" id="myModal">
+      <div class="modal-content2">
+          <span class="close2" id="closeBtn">&times;</span>
+          <h2>Publish your art work</h2>
+          <div class="fancy-input">
+            <label for="userInput">Your title:</label>
+            <input type="text" id="userInput" placeholder="Type something...">
+        </div>
+
+        <button class="publish-action" id="submitBtn">Submit</button>
+      </div>
+  </div>
+     <!-- MODAL END -->
+
+    <!-- Coding space -->
+    <div class="coding-space">
+        <div class="menu-column">
+            <h2>Block Code</h2>
+            <div class="menu">
+            </div>
+        </div>
+        <div class="script-column">
+            <h2>
+                Script:
+                <button class="clear-action">Clear</button>
+                <button class="save-action">Save</button>
+                <button class="load-action">Load</button>
+                <button class="open-modal">Publish</button>
+            </h2>
+            <div class="script"></div>
+        </div>
+        <div class="canvas-column">
+            <div class="canvas-placeholder"></div>
+            <canvas class="canvas"></canvas>
+        </div>
+    </div>
+    <!-- Coding end -->
+
+    <!-- Image Gallery -->
+    <div class="gallery">
+      <h1>Image Gallery</h1>
+      <div class="content-container">
+
+      </div>
+
+      <div id="load-more">
+        Load More
+      </div>
+
+      <div class="pop-up">
+        <span>&times;</span>
+        <img/>
+      </div>
+    </div>
+
+     <!-- Testimonial Start -->
+     <div class="container-fluid bg-image py-5" style="margin: 90px 0;">
+        <div class="container py-5">
+            <div class="row align-items-center">
+                <div class="col-lg-5 mb-5 mb-lg-0">
+                    <div class="section-title position-relative mb-4">
+                        <h6 class="d-inline-block position-relative text-secondary text-uppercase pb-2">Hoạt động
+                        </h6>
+                        <h1 class="display-4"><span>Workshop</span>
+                            <span style="color: #28a745;">S</span><span style="color: #007bff;">T</span><span
+                                style="color: #dc3545;">E</span><span style="color: #ffc107;">M</span>
+                                <span
+                                style="color: #28a745;">I</span><span style="color: #007bff;">S</span><span
+                                style="color: #dc3545;">.</span><span style="color: #ffc107;">.</span><span style="color: #28a745;">.</span>
+                        </h1>
+                    </div>
+                    <p class="m-0">Hãy cùng Khám Phá Khoa Học mang STEM đến mọi miền tổ quốc qua chuỗi workshop "STEM IS..." nhé!</p>
+                </div>
+                <div class="col-lg-7">
+                    <div class="owl-carousel testimonial-carousel">
+                        <div style="margin-top: 25px;">
+                            <iframe width="100%" height="400" src="https://www.youtube.com/embed/nJinm83_5-4?si=7Pwek33L6XsTfLMH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            <div class="mt-4 text-center"> <!-- Added text-center class for centering the button -->
+                                <a href="https://www.facebook.com/share/p/ugbUeow3BZXcTt83/" class="btn btn-primary" target="_blank">Thông Tin</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Testimonial Start -->
+    <!-- Footer Start -->
+    <div class="container-fluid position-relative overlay-top bg-dark text-white-50 py-5" style="margin-top: 90px;">
+        <div class="container mt-5 pt-5">
+            <div class="row">
+                <div class="col-md-6 mb-5">
+                    <a href="./index.html" class="navbar-brand">
+                        <h1 class="mt-n2 text-white">KhamPhaKhoaHoc.com</h1>
+                    </a>
+                    <p class="m-0">Khám Phá Khoa Học là dự án được tạo ra bởi các bạn trẻ đam mê STEM với sứ mệnh khơi
+                        dậy niềm đam mê khoa học trong trẻ em Việt Nam.
+
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="col-md-4 mb-5">
+                    <h3 class="text-white mb-4">Liên Hệ</h3>
+                    <p><i class="fa fa-phone-alt mr-2"></i>+84 867 990 857</p>
+                    <p><i class="fa fa-envelope mr-2"></i>khamphakhoahoc.stem@gmail.com</p>
+                    <div class="d-flex justify-content-start mt-4">
+                        <a class="text-white mr-4" href="https://www.facebook.com/profile.php?id=61559653868193"><i
+                                class="fab fa-2x fa-facebook-f"></i></a>
+                        <a class="text-white" href="https://www.youtube.com/channel/UCEzFyFCGT4zV8PX2EfXBN5A"><i
+                                class="fab fa-2x fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-5">
+                    <h3 class="text-white mb-4">Dự Án</h3>
+                    <div class="d-flex flex-column justify-content-start">
+                        <a class="text-white-50 mb-2" href="../../projectDropDown/engiProject.html"><i
+                                class="fa fa-angle-right mr-2"></i>Vật Lý/Kỹ Thuật</a>
+                        <a class="text-white-50 mb-2" href="../../projectDropDown/bioProject.html"><i
+                                class="fa fa-angle-right mr-2"></i>Hoá Sinh Ứng Dụng</a>
+                        <a class="text-white-50 mb-2" href="../../projectDropDown/pythonProject.html"><i
+                                class="fa fa-angle-right mr-2"></i>Python</a>
+                        <a class="text-white-50 mb-2" href="../../projectDropDown/scratchProject.html"><i
+                                class="fa fa-angle-right mr-2"></i>Scratch</a>
+                        <a class="text-white-50 mb-2" href="../../projectDropDown/aiProject.html"><i
+                            class="fa fa-angle-right mr-2"></i>AI</a>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-5">
+                    <h3 class="text-white mb-4">Liên Kết Khác</h3>
+                    <div class="d-flex flex-column justify-content-start">
+                        <!--<a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Privacy Policy</a>
+                        <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Terms & Condition</a>-->
+                        <!--<a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Regular FAQs</a>
+                        <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Help & Support</a>-->
+                        <a class="text-white-50" href="../../contact.html"><i class="fa fa-angle-right mr-2"></i>Liên Hệ</a>
+                        <a class="text-white-50" href="https://www.facebook.com/profile.php?id=61559653868193"><i
+                                class="fa fa-angle-right mr-2"></i>Facebook</a>
+                        <a class="text-white-50" href="https://www.youtube.com/channel/UCEzFyFCGT4zV8PX2EfXBN5A"><i
+                                class="fa fa-angle-right mr-2"></i>Youtube</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid bg-dark text-white-50 border-top py-4"
+        style="border-color: rgba(256, 256, 256, .1) !important;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-left mb-3 mb-md-0">
+                    <p class="m-0">Copyright &copy; <a class="text-white" href="#">Khám Phá Khoa Học</a>. All Rights
+                        Reserved.
+                    </p>
+                </div>
+                <div class="col-md-6 text-center text-md-right">
+                    <p class="m-0">Owls picture by <a href="https://www.vecteezy.com/free-vector/cartoon">Cartoon
+                            Vectors by Vecteezy</a>
+
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary rounded-0 btn-lg-square back-to-top"><i
+            class="fa fa-angle-double-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script>
+      let loadMoreBtn = document.querySelector("#load-more")
+      let currentItem = 3
+
+      loadMoreBtn.onclick = ()=>{
+        let boxes = [...document.querySelectorAll(".content-container .content")]
+        for (var i =currentItem;i<currentItem+3;i++){
+          boxes[i].style.display = "inline-block"
+        }
+
+        currentItem +=3
+      }
+      // Get the modal
+      const modal = document.getElementById("myModal");
+
+      // Get the button that opens the modal
+      const btn = document.querySelector(".open-modal");
+
+      // Get the <span> element that closes the modal
+      const span = document.getElementById("closeBtn");
+
+      // When the user clicks the button, open the modal
+      btn.onclick = function() {
+          modal.style.display = "block";
+      }
+
+      // When the user clicks on <span> (x), close the modal
+      span.onclick = function() {
+          modal.style.display = "none";
+      }
+
+      // When the user clicks anywhere outside of the modal, close it
+      window.onclick = function(event) {
+          if (event.target == modal) {
+              modal.style.display = "none";
+          }
+      }
+            
+  </script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="util.js"></script>
+	<script src="drag.js"></script>
+	<script>
+        (function(global) {
+    
+    'use strict';
+  
+    var scriptElem = document.querySelector('.script');
+    var canvas = document.querySelector(".canvas")
+  
+    function saveLocal() {
+      var script = scriptToJson();
+      if (script) {
+        localStorage._blockCode = script;
+      } else {
+        delete localStorage._blockCode;
+      }
+    }
+  
+    function scriptToJson() {
+      var blocks = [].slice.call(document.querySelectorAll('.script > .block'));
+      return blocks.length ? JSON.stringify(blocks.map(Block.script)) : null;
+    }
+  
+    function jsonToScript(json) {
+      clearScript();
+      JSON.parse(json).forEach(function(block) {
+        scriptElem.appendChild(Block.create.apply(null, block));
+      });
+      Menu.runSoon();
+    }
+  
+    function restoreLocal() {
+      jsonToScript(localStorage._blockCode || JSON.stringify(file.examples.triangle));
+    }
+  
+    function clearScript() {
+      [].slice.call(document.querySelectorAll('.script > .block')).forEach(function(block) {
+        block.parentElement.removeChild(block);
+      });
+      Menu.runSoon();
+    }
+  
+    function saveFile(evt) {
+      var title = prompt("Save file as: ");
+      if (!title) {
+        return;
+      }
+      var file = new Blob([scriptToJson()], { type: 'application/json' });
+      var reader = new FileReader();
+      var a = document.createElement('a');
+      reader.onloadend = function() {
+        var a = elem('a', { 'href': reader.result, 'download': title + '.json' });
+        a.click();
+      };
+      reader.readAsDataURL(file);
+    }
+  
+    function readFile(file) {
+      var fileName = file.name;
+      if (fileName.indexOf('.json', fileName.length - 5) === -1) {
+        return alert('Not a JSON file');
+      }
+      var reader = new FileReader();
+      reader.readAsText(file);
+      reader.onload = function(evt) {
+        jsonToScript(evt.target.result);
+      };
+    }
+  
+    function loadFile() {
+      var input = elem('input', { 'type': 'file', 'accept': 'application/json' });
+      if (!input) {
+        return;
+      }
+      input.addEventListener('change', function(evt) {
+        readFile(input.files[0]);
+      });
+      input.click();
+    }
+  
+    async function publishCreation() {
+      // Render the script to the canvas
+      renderScriptToCanvas();
+  
+      // Convert the canvas to an image
+      const imageData = canvas.toDataURL('image/png');
+      const userInput = document.getElementById("userInput");
+      const modal = document.getElementById("myModal");
+  
+      // Create a file object from the image data
+      if(userInput.value!=""){
+      const file = await fetch(imageData)
+        .then(res => res.blob())
+        .then(blob => new File([blob], `${userInput.value}`, { type: 'image/png' }));
+  
+      // Upload the file to Firebase Storage
+      const storageRef = firebase.storage().ref('khamphakhoahoc').child(file.name);
+      await storageRef.put(file);
+  
+      // Get the download URL of the uploaded image
+      const downloadURL = await storageRef.getDownloadURL();
+  
+      // Create a document in Firestore with the downloadURL
+      await firebase.firestore().collection('khamphahoahoc').add({
+        imageURL: downloadURL,
+        title: userInput.value
+      });
+
+      alert("Submited " + userInput.value)
+      userInput.value = ""; // Clear the input
+      modal.style.display = "none"; // Close the modal
+    }else{
+      alert("Đặt 1 cái tiêu đề thật hay nào!!")
+    }
+    }
+  
+    function renderScriptToCanvas() {
+      // Code to render the script to a canvas goes here
+      // You can use a library like p5.js or canvas-sketch to do this
+      // The resulting canvas should be saved as a global variable named 'canvas'
+    }
+  
+    global.file = {
+      saveLocal: saveLocal,
+      restoreLocal: restoreLocal,
+      examples: {}
+    };
+  
+    document.querySelector('.clear-action').addEventListener('click', clearScript, false);
+    document.querySelector('.save-action').addEventListener('click', saveFile, false);
+    document.querySelector('.load-action').addEventListener('click', loadFile, false);
+    document.querySelector('.publish-action').addEventListener('click', publishCreation, false);
+  
+    // Initialize Firebase
+    const firebaseConfig = {
+      // Your Firebase configuration goes here
+      apiKey: "AIzaSyB2U3_V9GvXEMUZr--_1AT6jSM8MtDIDzE",
+      authDomain: "mystore2-7237a.firebaseapp.com",
+      projectId: "mystore2-7237a",
+      storageBucket: "mystore2-7237a.appspot.com",
+      messagingSenderId: "419533628656",
+      appId: "1:419533628656:web:9b3d5f334cab488f1cce35",
+      measurementId: "G-7KWV54ZNYE"
+    };
+    firebase.initializeApp(firebaseConfig);
+  
+    // Add a function to handle errors during Firebase operations
+    function handleFirebaseError(error) {
+      console.log(error);
+      alert('An error occurred while interacting with Firebase. Please try again later.');
+    }
+
+    // Get the gallery container
+const galleryContainer = document.querySelector('.content-container');
+
+// Firebase Storage reference
+
+// Firebase Firestore reference
+const db = firebase.firestore();
+
+// Function to display images in the gallery
+function displayImages() {
+  // Get the list of images from Firestore
+  db.collection('khamphahoahoc').get().then(querySnapshot => {
+    querySnapshot.forEach(doc => {
+      const imageUrl = doc.data().imageURL;
+      const imageTitle = doc.data().title;
+
+      // Create an image element
+      const img = document.createElement('img');
+      img.className = "image"
+      const newDiv = document.createElement('div');
+      newDiv.className = "content"
+      const title = document.createElement('p');
+      title.className = "title"
+      img.src = imageUrl;
+      img.alt = imageTitle;
+      title.innerText = imageTitle
+      
+      // Append the image to the gallery container
+      newDiv.appendChild(img)
+      newDiv.appendChild(title)
+      galleryContainer.appendChild(newDiv);
+
+      img.addEventListener('click',()=>{
+        document.querySelector(".pop-up img").src = img.src
+        document.querySelector(".pop-up").style.display = "block"
+      })
+    });
+  });
+}
+
+// Call the displayImages function
+displayImages();
+  document.querySelector(".pop-up span").onclick = ()=>{
+    document.querySelector(".pop-up").style.display = "none"
+  }
+
+  document.querySelector(".pop-up").onclick = ()=>{
+    document.querySelector(".pop-up").style.display = "none"
+  }
+    // Add error handling to the publishCreation function
+    // async function publishCreation() {
+    //   try {
+    //     // Render the script to the canvas
+    //     renderScriptToCanvas();
+  
+    //     // Convert the canvas to an image
+    //     const imageData = canvas.toDataURL('image/png');
+  
+    //     // Create a file object from the image data
+    //     const file = await fetch(imageData)
+    //       .then(res => res.blob())
+    //       .then(blob => new File([blob], 'khamphakhoahoc.png', { type: 'image/png' }));
+  
+    //     // Upload the file to Firebase Storage
+    //     const storageRef = firebase.storage().ref('creations').child(file.name);
+    //     await storageRef.put(file);
+  
+    //     // Get the download URL of the uploaded image
+    //     const downloadURL = await storageRef.getDownloadURL();
+  
+    //     // Create a document in Firestore with the downloadURL
+    //     await firebase.firestore().collection('images').add({
+    //       imageURL: downloadURL
+    //     });
+  
+    //     console.log('Download URL:', downloadURL);
+    //   } catch (error) {
+    //     handleFirebaseError(error);
+    //   }
+    // }
+    
+  })(window);
+    </script>
+	<script src="blocks.js"></script>
+	<script src="menu.js"></script>
+	<script src="turtle.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="../../js/main.js"></script>
+</body>
+
+</html>

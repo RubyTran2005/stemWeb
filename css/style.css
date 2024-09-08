@@ -91,6 +91,234 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 0.5rem;
 }
 
+.open-modal {
+  padding: 10px 20px;
+  background-color: #007BFF;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+/* The Modal */
+.modal2 {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  padding-top: 100px;
+}
+
+        /* Submit Button */
+        .publish-action {
+          padding: 10px 20px;
+          background-color: #ed722b;
+          color: white;
+          border: none;
+          cursor: pointer;
+          border-radius: 5px;
+          transition: background-color 0.3s;
+          font-size: 15px;
+      }
+
+      .publish-action:hover {
+          background-color: #218838;
+      }
+
+/* Modal Content */
+.modal-content2 {
+  background-color: #fefefe;
+  margin: 5% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+  border-radius: 10px;
+}
+
+/* Close Button */
+.close2 {
+  color: #aaa;
+  float: right;
+  font-size: 35px;
+  font-weight: bold;
+  margin-top: -20px;
+}
+
+        /* Fancy Input */
+        .fancy-input {
+          margin: 20px 0;
+          display: flex;
+          flex-direction: column;
+      }
+
+      .fancy-input label {
+          margin-bottom: 5px;
+          font-weight: bold;
+      }
+
+      .fancy-input input {
+          padding: 10px;
+          border: 1px solid #ccc;
+          border-radius: 5px;
+          transition: border-color 0.3s;
+      }
+
+      .fancy-input input:focus {
+          border-color: #007BFF;
+          outline: none;
+          box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+      }
+
+.close2:hover,
+.close2:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.menu-column{ width: 24%; height: 85%; float: left; margin-left: 10px; }
+.menu{ background-color: PeachPuff; overflow-y: auto; }
+.menu.over{ background-color: BurlyWood; }
+.script-column{ width: 24%; height: 85%; float: left; margin: 0 10px; }
+.script-column h2 button{
+  font-size: 15px;
+  border-width: 0;
+  outline: 0;
+  background: #ccc;
+  border-radius: 20px;
+  padding: 5px;
+}
+.script{ background-color: LightSteelBlue; height: 63%; overflow-y: auto; }
+.script.over{ background-color: CadetBlue; }
+.canvas-column{ width: 40%; height: 60%; float: right; margin-right: 10px; }
+.canvas-placeholder{ width: 100%; height: 86%; }
+.canvas{ background-color: white; position: absolute;border-width: 3px;border-style: solid;border-radius: 8px;margin-top:50px }
+.block{ padding: 5px; margin: 10px; cursor: move; }
+.block.running{ outline: 2px solid red; }
+.block.next{ outline: 2px solid green; }
+.block.dragging{ opacity: 0.4; }
+.menu .block{ background-color: Coral; }
+.script .block{ margin: 5px; background-color: DodgerBlue; }
+.block input{ margin-left: 1em; width: 5em; margin-bottom: 5px; }
+.container_blocks{
+    margin: 0 -6px 0 20px;
+    padding-bottom: 10px;
+    border: 1px inset #021429; border-radius: 7px;
+    border-right: 0;
+    background-color: LightSteelBlue;
+    border-radius: 7px 0 0 7px;
+}
+.menu .container_blocks{ background-color: PeachPuff; }
+.over .container_blocks{ background-color: CadetBlue;  }
+
+.gallery{
+  position: relative;
+  /* min-height: 50vh; */
+  top:-330px;
+  width: 100%;
+  display: flex;
+  flex-direction: column; /* Stack children vertically */
+  align-items: center; /* Center horizontally */
+}
+
+.gallery h1{
+  padding: 15px;
+  text-align: center;
+}
+
+.gallery .content-container{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+  padding: 10px;
+}
+
+.content-container .content{
+  height: 300px;
+  width: 350px;
+  border: 10px solid #ddd;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  overflow: hidden;
+  display: none;
+}
+
+.content-container .content:nth-child(1),
+.content-container .content:nth-child(2),
+.content-container .content:nth-child(3),
+.content-container .content:nth-child(4){
+  display: inline-block;
+}
+
+.content-container .content .image{
+  height: 90%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.content-container .content .title{
+  text-align: center;
+}
+
+#load-more{
+  margin-top: 20px;
+  padding:10px 30px;
+  border: 1px solid #334;
+  color: #334;
+  font-size: 16px;
+  display: inline-block;
+  border-radius: 20px;
+  cursor: pointer;
+  
+}
+
+#load-more:hover{
+  background-color: crimson;
+  border-color: crimson;
+  color: #fff;
+}
+
+.gallery .pop-up{
+  position: fixed;
+  top:0;left:0;
+  background:rgba(0,0,0,0.9);
+  height: 100%;
+  width: 100%;
+  z-index: 100; 
+  display: none;
+}
+
+.gallery .pop-up span{
+  position:absolute;
+  top: 0;right:10px;
+  font-size: 60px;
+  font-weight: bolder;
+  color: #fff;
+  cursor: pointer;
+  z-index: 100;
+}
+
+.gallery .pop-up img{
+  position: absolute;
+  top:50%;left: 50%;
+  transform: translate(-50%,-50%);
+  border: 5px solid #fff;
+  border-radius: 5px;
+  width: 750px;
+  object-fit: cover;
+  
+}
+
+@media (max-width:768px){
+  .gallery .pop-up img{
+    width: 95%;
+  }
+}
 
 #learnMoreBtn {
   opacity: 0;
@@ -3199,7 +3427,7 @@ input[type="button"].btn-block {
   position: absolute;
   top: 100%;
   left: 0;
-  z-index: 1000;
+  z-index: 10;
   display: none;
   float: left;
   min-width: 10rem;
@@ -4317,6 +4545,57 @@ input[type="button"].btn-block {
 
     .navbar-nav ul li ul {
       display: none;
+    }
+
+    .game-categories {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .game-categories p {
+      font-weight: 600;
+      color: black;
+      margin-top: 30px;
+      font-size: 33px;
+      text-align: center;
+      padding: 0 2.5rem;
+    }
+    
+    .game-categories .category {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-start; /* Change this to flex-start */
+      padding: 1rem 1rem;
+      align-items: center;
+    }
+    
+    .category .game {
+      display: block;
+      width: 21rem; /* Change this to a percentage-based width */
+      padding: 1rem 1rem;
+      /* background-color: var(--blue); */
+      margin: 1rem; /* Add a margin to create space between games */
+      cursor: pointer;
+      transition: transform 0.3s;
+      border-radius:6px;
+      background-color: #334;
+    }
+
+    .category .game:hover {
+      transform: scale(1.1);
+    }
+    
+    .game img {
+      width: 100%;
+    }
+
+    .coding-space{
+      display: block;
+      width: 100%;
+      height: 60rem;
     }
 
 .dropdown-item .fas{
