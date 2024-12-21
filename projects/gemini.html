@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Dự Án-chatbox Gemini</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Dự Án Khám Phá Khoa Học" name="keywords">
+    <meta content="Khám Phá Khoa Học là dự án do các bạn trẻ đầy nhiệt huyết tạo ra nhằm mục đích truyền
+    cảm hứng theo đuổi ngành STEM cho các học sinh cấp 1 và cấp 2." name="description">
+
+    <!--Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+
+    <!-- Favicon -->
+    <link href="../img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600;700&family=Open+Sans:wght@400;600&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="../lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="../css/style.css" rel="stylesheet">
+</head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-7408T4E63D"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-7408T4E63D');
+</script>
+
+<body>
+    <!-- Topbar Start -->
+    <div class="container-fluid bg-dark">
+        <div class="row py-2 px-lg-5">
+            <div class="col-lg-6 text-center text-lg-left mb-2 mb-lg-0">
+                <div class="d-inline-flex align-items-center text-white">
+                    <small><i class="fa fa-phone-alt mr-2"></i>+84 867 990 857</small>
+                    <small class="px-3">|</small>
+                    <small><i class="fa fa-envelope mr-2"></i>khamphakhoahoc.stem@gmail.com</small>
+                </div>
+            </div>
+            <div class="col-lg-6 text-center text-lg-right">
+                <div class="d-inline-flex align-items-center">
+                    <a class="text-white px-2" href="https://www.facebook.com/profile.php?id=61559653868193">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <!--<a class="text-white px-2" href="">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a class="text-white px-2" href="">
+                        <i class="fab fa-instagram"></i>
+                    </a>-->
+                    <a class="text-white pl-2" href="https://www.youtube.com/channel/UCEzFyFCGT4zV8PX2EfXBN5A">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Topbar End -->
+
+
+    <!-- Navbar Start -->
+    <div class="container-fluid p-0">
+        <nav class="navbar navbar-expand-lg bg-white navbar-light py-3 py-lg-0 px-lg-5">
+            <a href="../index.html" class="navbar-brand ml-lg-3">
+                <h5 class="m-0 text-uppercase text-primary"><img src="../img/Logo.png" alt="" style="height:85px;"></h1>
+            </a>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-between px-lg-3" id="navbarCollapse">
+                <div class="navbar-nav mx-auto py-0">
+                    <ul class="nested-dropdown">
+                        <li><a href="../index.html" class="nav-item nav-link">Trang Chủ</a></li>
+                        <li> <a href="../about.html" class="nav-item nav-link">Giới Thiệu</a></li>
+                        <li><a href="../kienThucThuVi.html" class="nav-item nav-link">Kiến Thức Thú Vị</a></li>
+                        <li class="nav-item dropdown">
+                            <a href="./courses.html" class="nav-link dropdown-toggle active" data-toggle="dropdown">Dự
+                                Án STEM</a>
+                            <ul class="dropdown-menu m-0">
+                                <li><a href="../projectDropDown/engiProject.html" class="dropdown-item">Kỹ Thuật/Vật
+                                        Lý</a></li>
+                                <li><a href="../projectDropDown/bioProject.html" class="dropdown-item">Hoá Sinh Ứng
+                                        Dụng</a></li>
+
+                                <li><a href="../projectDropDown/aiProject.html" class="dropdown-item">AI</a></li>
+                                <li><a class="dropdown-item">Lập Trình <i class="fas fa-caret-down"></i></a>
+
+                                    <ul class="submenu-dropdown">
+                                        <li><a href="../projectDropDown/pythonProject.html">Python</a></li>
+                                        <li><a href="../projectDropDown/scratchProject.html">Scratch</a></li>
+                                    </ul>
+
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li><a href="../thuthachthang.html" class="nav-item nav-link">Thử Thách Tháng</a></li>
+                    </ul>
+                </div>
+                <a href="../contact.html" class="btn btn-primary py-2 px-4 d-none d-lg-block">Liên Hệ</a>
+            </div>
+        </nav>
+    </div>
+    <!-- Navbar End -->
+
+
+    <!-- Header Start -->
+    <div>
+        <img src="./img/geminiCover.jpg" alt="" style="width:100%;">
+    </div>
+    <!-- Header End -->
+
+    <!--Project Start-->
+    <br>
+    <br>
+    <br>
+    <div class="container py-5">
+        <div class="row">
+            <!-- Experiment Explanation and Video Section -->
+            <div class="col-lg-8 mb-5">
+                <h2 class="mb-4">MÔ TẢ DỰ ÁN</h2>
+                <p>Chúng mình sẽ giới thiệu và hướng dẫn bạn sử dụng Chatbox Gemini — một chatbot thông minh được thiết
+                    kế để mang đến những trải nghiệm trò chuyện mượt mà và hiệu quả. Hãy cùng khám phá cách Chatbox
+                    Gemini có thể giúp bạn giải quyết các vấn đề nhanh chóng, tương tác tự nhiên, và nâng cao hiệu quả
+                    công việc.
+                </p>
+                <br>
+                <!-- Larger Video Section -->
+                <div class="embed-responsive embed-responsive-16by9">
+                    <!-- Replace VIDEO_ID with your actual YouTube video ID -->
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/lDPJLhYWEPs?si=6kX9QXYsLyqukOnT"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+            <!-- Materials and Safety Cautions Section -->
+            <div class="col-lg-4">
+                <div class="materials-box card">
+                    <div class="card-body">
+                        <h2 class="materials-title card-title">Vật Liệu Cần Thiết</h2>
+                        <ul class="list-group">
+                            <!-- List of materials -->
+                            <li class="materials-item ">Máy tính có kết nối với wifi</li>
+                            <li class="materials-item ">Tài khoản Gemini</li>
+                            <!-- Add more materials as needed -->
+                        </ul>
+                    </div>
+                </div>
+                <div class="safety-cautions-box card mt-4">
+                    <div class="card-body">
+                        <h2 class="safety-cautions-title card-title">Nội Quy An Toàn</h2>
+                        <ul class="list-group">
+                            <!-- List of safety cautions -->
+                            <li class="safety-cautions-item">Không nên vừa sửa dụng vừa sạc máy tính</li>
+                            <!-- Add more safety cautions as needed -->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Project End -->
+
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid position-relative overlay-top bg-dark text-white-50 py-5" style="margin-top: 90px;">
+        <div class="container mt-5 pt-5">
+            <div class="row">
+                <div class="col-md-6 mb-5">
+                    <a href="../index.html" class="navbar-brand">
+                        <h1 class="mt-n2 text-white">KhamPhaKhoaHoc.com</h1>
+                    </a>
+                    <p class="m-0">Khám Phá Khoa Học là dự án được tạo ra bởi các bạn trẻ đam mê STEM với sứ mệnh khơi
+                        dậy niềm đam mê khoa học trong trẻ em Việt Nam.
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="col-md-4 mb-5">
+                    <h3 class="text-white mb-4">Liên Hệ</h3>
+                    <p><i class="fa fa-phone-alt mr-2"></i>+84 867 990 857</p>
+                    <p><i class="fa fa-envelope mr-2"></i>khamphakhoahoc.stem@gmail.com</p>
+                    <div class="d-flex justify-content-start mt-4">
+                        <a class="text-white mr-4" href="https://www.facebook.com/profile.php?id=61559653868193"><i
+                                class="fab fa-2x fa-facebook-f"></i></a>
+                        <a class="text-white" href="https://www.youtube.com/channel/UCEzFyFCGT4zV8PX2EfXBN5A"><i
+                                class="fab fa-2x fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-5">
+                    <h3 class="text-white mb-4">Dự Án</h3>
+                    <div class="d-flex flex-column justify-content-start">
+                        <a class="text-white-50 mb-2" href="../projectDropDown/engiProject.html"><i
+                                class="fa fa-angle-right mr-2"></i>Vật Lý/Kỹ Thuật</a>
+                        <a class="text-white-50 mb-2" href="../projectDropDown/bioProject.html"><i
+                                class="fa fa-angle-right mr-2"></i>Hoá Sinh Ứng Dụng</a>
+                        <a class="text-white-50 mb-2" href="../projectDropDown/pythonProject.html"><i
+                                class="fa fa-angle-right mr-2"></i>Python</a>
+                        <a class="text-white-50 mb-2" href="../projectDropDown/scratchProject.html"><i
+                                class="fa fa-angle-right mr-2"></i>Scratch</a>
+                        <a class="text-white-50 mb-2" href="../projectDropDown/aiProject.html"><i
+                                class="fa fa-angle-right mr-2"></i>AI</a>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-5">
+                    <h3 class="text-white mb-4">Liên Kết Khác</h3>
+                    <div class="d-flex flex-column justify-content-start">
+                        <!--<a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Privacy Policy</a>
+                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Terms & Condition</a>-->
+                        <!--<a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Regular FAQs</a>
+                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Help & Support</a>-->
+                        <a class="text-white-50" href="../contact.html"><i class="fa fa-angle-right mr-2"></i>Liên
+                            Hệ</a>
+                        <a class="text-white-50" href="https://www.facebook.com/profile.php?id=61559653868193"><i
+                                class="fa fa-angle-right mr-2"></i>Facebook</a>
+                        <a class="text-white-50" href="https://www.youtube.com/channel/UCEzFyFCGT4zV8PX2EfXBN5A"><i
+                                class="fa fa-angle-right mr-2"></i>Youtube</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid bg-dark text-white-50 border-top py-4"
+        style="border-color: rgba(256, 256, 256, .1) !important;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-left mb-3 mb-md-0">
+                    <p class="m-0">Copyright &copy; <a class="text-white" href="#">Khám Phá Khoa Học</a>. All Rights
+                        Reserved.
+                    </p>
+                </div>
+                <div class="col-md-6 text-center text-md-right">
+                    <p class="m-0">Owls picture by <a href="https://www.vecteezy.com/free-vector/cartoon">Cartoon
+                            Vectors by Vecteezy</a>
+
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary rounded-0 btn-lg-square back-to-top"><i
+            class="fa fa-angle-double-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="../lib/easing/easing.min.js"></script>
+    <script src="../lib/waypoints/waypoints.min.js"></script>
+    <script src="../lib/counterup/counterup.min.js"></script>
+    <script src="../lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="../js/main.js"></script>
+</body>
+
+</html>
